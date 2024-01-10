@@ -4,7 +4,28 @@
 
 
 .portfolio-image {
-    background-image: url('../public/portfolio.png');
+    background-image: url('../public/valorant.png');
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.751);
 }  
+
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.slide-in-left {
+  animation: slideInLeft 0.5s ease-in-out;
+}
+  
+  
+
+
+  
+  
