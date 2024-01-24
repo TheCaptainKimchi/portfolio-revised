@@ -14,7 +14,7 @@ export default function Navbar() {
           <li className="w-1/3 flex justify-center py-4 md:py-6">
             <Link
               href={"#about"}
-              className="flex flex-col items-center lg:hover:scale-110 lg:hover:transition lg:hover:duration-500 lg:ease-in-out"
+              className="flex flex-col items-center lg:hover:scale-110 lg:transition lg:duration-300 lg:ease-in-out"
             >
               <Image
                 src={Description}
@@ -27,7 +27,7 @@ export default function Navbar() {
           <li className="w-1/3 flex justify-center py-4 md:py-6">
             <Link
               href={"#projects"}
-              className="flex flex-col items-center lg:hover:scale-110 lg:hover:transition lg:hover:duration-500 lg:ease-in-out"
+              className="flex flex-col items-center lg:hover:scale-110 lg:transition lg:duration-300 lg:ease-in-out"
             >
               <Image
                 src={Work}
@@ -40,7 +40,7 @@ export default function Navbar() {
           <li className="w-1/3 flex justify-center py-4 md:py-6">
             <Link
               href={"#contact"}
-              className="flex flex-col items-center lg:hover:scale-110 lg:hover:transition lg:hover:duration-500 lg:ease-in-out"
+              className="flex flex-col items-center lg:hover:scale-110 lg:transition lg:duration-300 lg:ease-in-out"
             >
               <Image
                 src={Contact}

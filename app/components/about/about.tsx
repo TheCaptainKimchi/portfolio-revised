@@ -140,7 +140,7 @@ export default function About() {
       {/* Hero */}
       <div className="flex flex-col w-8/12 h-96 justify-center items-center text-center lg:w-3/12">
         <h1 className="text-5xl font-bold">Raul Calero</h1>
-        <h1 className="text-3xl text-slate-300 font-bold mb-10">
+        <h1 className="text-3xl text-slate-300 font-bold mb-10 italic">
           Software Developer
         </h1>
         <p>I specialize in {skillCycle}</p>
