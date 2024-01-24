@@ -9,10 +9,13 @@ export default function Navbar() {
   return (
     <div>
       {/* Mobile navbar */}
-      <nav className="fixed bottom-0 left-0 w-screen h-fit bg-white/10 backdrop-blur-sm md:flex md:justify-center z-50">
+      <nav className="fixed bottom-0 left-0 w-full h-fit bg-white/10 backdrop-blur-sm md:flex md:justify-center z-50 lg:top-0">
         <ul className="w-full flex justify-evenly text-white text-opacity-65">
           <li className="w-1/3 flex justify-center py-4 md:py-6">
-            <Link href={"/"} className="flex flex-col items-center">
+            <Link
+              href={"#about"}
+              className="flex flex-col items-center lg:hover:scale-110 lg:hover:transition lg:hover:duration-500 lg:ease-in-out"
+            >
               <Image
                 src={Description}
                 alt="about"
@@ -22,7 +25,10 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="w-1/3 flex justify-center py-4 md:py-6">
-            <Link href={"/"} className="flex flex-col items-center">
+            <Link
+              href={"#projects"}
+              className="flex flex-col items-center lg:hover:scale-110 lg:hover:transition lg:hover:duration-500 lg:ease-in-out"
+            >
               <Image
                 src={Work}
                 alt="projects"
@@ -32,7 +38,10 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="w-1/3 flex justify-center py-4 md:py-6">
-            <Link href={"/"} className="flex flex-col items-center">
+            <Link
+              href={"#contact"}
+              className="flex flex-col items-center lg:hover:scale-110 lg:hover:transition lg:hover:duration-500 lg:ease-in-out"
+            >
               <Image
                 src={Contact}
                 alt="contact"

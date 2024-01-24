@@ -3,6 +3,7 @@
 import Image from "next/image";
 import ProfilePic from "@/public/raul.jpg";
 import { useEffect, useState, useRef, ReactElement } from "react";
+import Link from "next/link";
 
 export default function About() {
   // State for the current skill
@@ -133,11 +134,11 @@ export default function About() {
   }, []);
 
   return (
-    <div className="w-full flex flex-col items-center text-white pb-40">
+    <div className="w-full flex flex-col items-center text-white lg:mt-10">
       {/* Mobile About */}
 
       {/* Hero */}
-      <div className="flex flex-col w-8/12 h-96 justify-center items-center text-center">
+      <div className="flex flex-col w-8/12 h-96 justify-center items-center text-center lg:w-3/12">
         <h1 className="text-5xl font-bold">Raul Calero</h1>
         <h1 className="text-3xl text-slate-300 font-bold mb-10">
           Software Developer
@@ -145,17 +146,26 @@ export default function About() {
         <p>I specialize in {skillCycle}</p>
 
         <div className="flex w-full justify-between mt-5">
-          <button className="border-2 border-white border-opacity-50 rounded-2xl py-1 px-4 shadow-violet-600/30 shadow-xl">
+          <Link
+            href="#contact"
+            className="border-2 border-white border-opacity-50 rounded-2xl py-1 px-4 shadow-violet-600/30 shadow-xl lg:hover:scale-110 lg:transition lg:duration-300 lg:ease-in-out lg:hover:shadow-violet-600"
+          >
             Hire Me
-          </button>
-          <button className="border-2 border-white border-opacity-50 rounded-2xl py-1 px-4 shadow-violet-600/30 shadow-xl">
+          </Link>
+          <Link
+            href="#projects"
+            className="border-2 border-white border-opacity-50 rounded-2xl py-1 px-4 shadow-violet-600/30 shadow-xl lg:hover:scale-110 lg:transition lg:duration-300 lg:ease-in-out lg:hover:shadow-violet-600"
+          >
             Learn More
-          </button>
+          </Link>
         </div>
       </div>
 
       {/* About Me */}
-      <div className="w-full h-80 flex items-center justify-between bg-white bg-opacity-10 py-5 px-10">
+      <div
+        className="w-full flex items-center justify-between bg-white bg-opacity-10 py-5 px-10 lg:w-1/2 lg:mb-20 lg:rounded-xl"
+        id="about"
+      >
         <Image
           src={ProfilePic}
           alt="raul-profile"
@@ -164,27 +174,29 @@ export default function About() {
         <div className="flex flex-col ml-3">
           <h2 className="text-2xl">About Me</h2>
           <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-            officiis qui reiciendis in doloribus dolore suscipit est, sequi
-            vitae aperiam sed beatae molestiae esse. Dolorum.
+            Skilled software engineer with expertise in Next.js, React.js, and
+            Node.js. Proficient in Agile methodologies and full stack
+            development, including Python and database management. Known for
+            strong problem-solving and communication skills, adept at enhancing
+            team productivity and project success in dynamic tech environments.
           </p>
         </div>
       </div>
 
       {/* My Skills */}
-      <div className="w-screen flex flex-col items-center mb-40 py-10 bg-gradient-to-bl from-sky-600 via-violet-500 to-sky-600">
+      <div className="w-full flex flex-col items-center mb-5 py-10 px-4 bg-gradient-to-bl from-sky-600 via-violet-500 to-sky-600">
         <h2 className="text-2xl mb-3">My Skills</h2>
-        <div>
+        <div className="lg:flex lg:flex-col lg: items-center">
           {/* Top */}
-          <div className="flex mb-4">
-            <div className="bg-red-500 mr-4 w-1/2 h-11/12 flex flex-col justify-center p-4 rounded-2xl shadow-black/60 shadow-lg">
+          <div className="flex mb-4 lg:w-3/4 lg:text-center">
+            <div className="bg-red-500 mr-4 w-1/2 h-11/12 flex flex-col justify-center p-4 rounded-2xl shadow-black/60 shadow-lg lg:h-48">
               <h3 className="mb-2 text-lg">Front-End:</h3>
               <p className="text-sm">
                 HTML, CSS, Tailwind CSS, JavaScript, TypeScript, React.js,
                 Next.js
               </p>
             </div>
-            <div className="bg-red-500 w-1/2 h-11/12 flex flex-col justify-center p-4 rounded-2xl shadow-black/60 shadow-lg">
+            <div className="bg-red-500 w-1/2 h-11/12 flex flex-col justify-center p-4 rounded-2xl shadow-black/60 shadow-lg lg:h-48">
               <h3 className="mb-2 text-lg">Back-End & Databases:</h3>
               <p className="text-sm">
                 Python, Flask, Node.js, Express, EC2, S3, MySQL, PostgreSQL
@@ -192,15 +204,15 @@ export default function About() {
             </div>
           </div>
           {/* Bottom */}
-          <div className="flex">
-            <div className="bg-red-500 mr-4 w-1/2 h-11/12 flex flex-col justify-center p-4 rounded-2xl shadow-black/60 shadow-lg">
+          <div className="flex lg:w-3/4 lg:text-center">
+            <div className="bg-red-500 mr-4 w-1/2 h-11/12 flex flex-col justify-center p-4 rounded-2xl shadow-black/60 shadow-lg lg:h-48">
               <h3 className="mb-2 text-lg">Development & Deployment:</h3>
               <p className="text-sm">
                 Agile, Scrum, RESTful APIs, OAuth, GitHub, Git, Jest, Knex,
                 Linux
               </p>
             </div>
-            <div className="bg-red-500 w-1/2 h-11/12 flex flex-col justify-center p-4 rounded-2xl shadow-black/60 shadow-lg">
+            <div className="bg-red-500 w-1/2 h-11/12 flex flex-col justify-center p-4 rounded-2xl shadow-black/60 shadow-lg lg:h-48">
               <h3 className="mb-2 text-lg">Soft Skills:</h3>
               <p className="text-sm">
                 Problem-Solving, Effective Communication, Teamwork,
@@ -212,21 +224,60 @@ export default function About() {
       </div>
 
       {/* My Projects */}
-      <div className="w-11/12 h-72 flex flex-col items-center">
+      <div
+        className="w-11/12 py-20 flex flex-col items-center lg:mb-14"
+        id="projects"
+      >
         <h2 className="text-2xl mb-3">My Projects</h2>
         <div className="w-full flex flex-col items-center">
-          <div className="flex flex-col text-center justify-center items-center w-80 h-60 mb-4 rounded-xl shadow-black/70 shadow-xl portfolio-image bg-blend-overlay">
+          <div className="flex flex-col text-center justify-center items-center w-80 h-60 mb-4 rounded-xl shadow-black/70 shadow-xl portfolio-image-1 bg-blend-overlay lg:w-2/6 lg:h-72 lg:my-6">
             <h3 className="mb-5 text-xl text-violet-500 font-bold">Spark GG</h3>
-            <p className="mb-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
-              cumque.
+            <p className="mb-3 px-4">
+              Esports Statistics app that uses React.js and Node.js for esports
+              data analysis, providing real-time insights and interactive
+              visuals for match trends and player performance.
             </p>
-            <button className="border-2 py-1 px-5 rounded-2xl text-sm">
+            <Link
+              href={
+                "https://github.com/TheCaptainKimchi/raul-calero-capstone-client"
+              }
+              className="border-2 py-1 px-5 rounded-2xl text-sm lg:hover:scale-110 lg:transition lg:duration-300 lg:ease-in-out"
+            >
               See Repo
-            </button>
+            </Link>
           </div>
-          <div className="flex flex-col text-center justify-center items-center bg-green-700  w-80 h-60 mb-4 rounded-xl shadow-black/70 shadow-xl bg-blend-overlay"></div>
-          <div className="flex flex-col text-center justify-center items-center bg-green-700  w-80 h-60 mb-4 rounded-xl shadow-black/70 shadow-xl bg-blend-overlay"></div>
+          <div className="flex flex-col text-center justify-center items-center w-80 h-60 mb-4 rounded-xl shadow-black/70 shadow-xl portfolio-image-2 bg-blend-overlay lg:w-2/6 lg:h-72 lg:my-6">
+            <h3 className="mb-5 text-xl text-violet-500 font-bold">
+              Hungry Eyes Photos
+            </h3>
+            <p className="mb-3 px-4">
+              Cloud Photo Storage, built with Next.js and Node.js, enables users
+              to store photos and display slideshows on any device. It
+              integrates EC2, RDS, and S3 for efficient hosting and management.
+            </p>
+            <Link
+              href={
+                "https://github.com/GalaxyTechnologies/hungry-eyes-client-revised"
+              }
+              className="border-2 py-1 px-5 rounded-2xl text-sm lg:hover:scale-110 lg:transition lg:duration-300 lg:ease-in-out"
+            >
+              See Repo
+            </Link>
+          </div>
+          <div className="flex flex-col text-center justify-center items-center w-80 h-60 mb-4 rounded-xl shadow-black/70 shadow-xl portfolio-image-3 bg-blend-overlay lg:w-2/6 lg:h-72 lg:my-6">
+            <h3 className="mb-5 text-xl text-violet-500 font-bold">
+              Claimtrade
+            </h3>
+            <p className="mb-3 px-4">
+              Claims Trade Marketplace, utilizing Next.js and Node.js,
+              facilitates the trading of property claims. Leveraging EC2, RDS,
+              and S3, it offers a reliable and secure platform for claim
+              exchanges.
+            </p>
+            <div className="py-1 px-5 rounded-2xl text-sm bg-gray-500 border-0 text-gray-200">
+              Project Pending
+            </div>
+          </div>
         </div>
       </div>
     </div>
