@@ -266,13 +266,10 @@ export default function About() {
           <div className="flex flex-col text-center justify-center items-center w-80 h-60 mb-4 rounded-xl shadow-black/70 shadow-xl portfolio-image-2 bg-blend-overlay lg:w-2/6 lg:h-72 lg:my-6">
             <h3 className="mb-5 text-xl text-violet-500 font-bold">Zero AI</h3>
             <p className="mb-3 px-4">
-              Zero AI, crafted with cutting-edge AI technologies, empowers
-              employers to leverage artificial intelligence for conducting
-              interviews and evaluating candidates through scoring. This
-              platform incorporates advanced algorithms and machine learning to
-              automate the interview process, ensuring a consistent and unbiased
-              assessment of interviewees, optimizing the recruitment workflow
-              for efficiency and effectiveness.
+              Zero AI utilizes sophisticated AI to automate interviews and
+              provide detailed scoring of candidates, employing advanced
+              algorithms for a streamlined, efficient, and consistent
+              recruitment process, enhancing accuracy and productivity.
             </p>
             <div className="py-1 px-5 rounded-2xl text-sm bg-gray-500 border-0 text-gray-200">
               Project Pending
