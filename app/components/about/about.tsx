@@ -230,6 +230,23 @@ export default function About() {
       >
         <h2 className="text-2xl mb-3">My Projects</h2>
         <div className="w-full flex flex-col items-center">
+          <div className="flex flex-col text-center justify-center items-center w-80 h-60 mb-4 rounded-xl shadow-black/70 shadow-xl portfolio-image-3 bg-blend-overlay lg:w-2/6 lg:h-72 lg:my-6">
+            <h3 className="mb-5 text-xl text-violet-500 font-bold">
+              Claimtrade
+            </h3>
+            <p className="mb-3 px-4">
+              Claims Trade Marketplace, utilizing Next.js and Node.js,
+              facilitates the trading of property claims. Leveraging EC2, RDS,
+              and S3, it offers a reliable and secure platform for claim
+              exchanges.
+            </p>
+            <Link
+              href={"https://claimtrade.app/"}
+              className="border-2 py-1 px-5 rounded-2xl text-sm lg:hover:scale-110 lg:transition lg:duration-300 lg:ease-in-out"
+            >
+              See Application
+            </Link>
+          </div>
           <div className="flex flex-col text-center justify-center items-center w-80 h-60 mb-4 rounded-xl shadow-black/70 shadow-xl portfolio-image-1 bg-blend-overlay lg:w-2/6 lg:h-72 lg:my-6">
             <h3 className="mb-5 text-xl text-violet-500 font-bold">Spark GG</h3>
             <p className="mb-3 px-4">
@@ -247,32 +264,15 @@ export default function About() {
             </Link>
           </div>
           <div className="flex flex-col text-center justify-center items-center w-80 h-60 mb-4 rounded-xl shadow-black/70 shadow-xl portfolio-image-2 bg-blend-overlay lg:w-2/6 lg:h-72 lg:my-6">
-            <h3 className="mb-5 text-xl text-violet-500 font-bold">
-              Hungry Eyes Photos
-            </h3>
+            <h3 className="mb-5 text-xl text-violet-500 font-bold">Zero AI</h3>
             <p className="mb-3 px-4">
-              Cloud Photo Storage, built with Next.js and Node.js, enables users
-              to store photos and display slideshows on any device. It
-              integrates EC2, RDS, and S3 for efficient hosting and management.
-            </p>
-            <Link
-              href={
-                "https://github.com/GalaxyTechnologies/hungry-eyes-client-revised"
-              }
-              className="border-2 py-1 px-5 rounded-2xl text-sm lg:hover:scale-110 lg:transition lg:duration-300 lg:ease-in-out"
-            >
-              See Repo
-            </Link>
-          </div>
-          <div className="flex flex-col text-center justify-center items-center w-80 h-60 mb-4 rounded-xl shadow-black/70 shadow-xl portfolio-image-3 bg-blend-overlay lg:w-2/6 lg:h-72 lg:my-6">
-            <h3 className="mb-5 text-xl text-violet-500 font-bold">
-              Claimtrade
-            </h3>
-            <p className="mb-3 px-4">
-              Claims Trade Marketplace, utilizing Next.js and Node.js,
-              facilitates the trading of property claims. Leveraging EC2, RDS,
-              and S3, it offers a reliable and secure platform for claim
-              exchanges.
+              Zero AI, crafted with cutting-edge AI technologies, empowers
+              employers to leverage artificial intelligence for conducting
+              interviews and evaluating candidates through scoring. This
+              platform incorporates advanced algorithms and machine learning to
+              automate the interview process, ensuring a consistent and unbiased
+              assessment of interviewees, optimizing the recruitment workflow
+              for efficiency and effectiveness.
             </p>
             <div className="py-1 px-5 rounded-2xl text-sm bg-gray-500 border-0 text-gray-200">
               Project Pending
